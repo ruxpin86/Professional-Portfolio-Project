@@ -1,0 +1,36 @@
+* {
+    font-family: 'Armata',
+        sans-serif;
+}
+
+/* page background color */
+body {
+    background-color: slategray;
+}
+
+.banner img {
+    width: 100%;
+    height: 30vh;
+}
+
+/* name size */
+.header {
+    font-size: x-large;
+}
+
+/* sub-header size */
+.header h2 {
+    font-size: larger;
+}
+
+.nav-bar {
+    padding: 10px;
+    background-color: rgb(53, 92, 160);
+    font-size: larger;
+}
+
+.nav-bar ul {}
+
+.nav-bar ul li {
+    display: inline-block;
+}
