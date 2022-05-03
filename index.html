@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William (Ted) Glynn Portfolio</title>
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +21,10 @@
     </header>
     <nav>
         <ul class="nav-bar">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">My Projects</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-            <li><a href="#">Resume</a></li>
+            <li class="nav-list"><a href="#about-me">About Me</a></li>
+            <li class="nav-list"><a href="#projects">My Projects</a></li>
+            <li class="nav-list"><a href="#contact-me">Contact Me</a></li>
+            <li class="nav-list"><a href="#">Resume</a></li>
         </ul>
     </nav>
     <section class="banner">
@@ -32,34 +33,40 @@
     <main>
         <section class="about-me">
             <h2 id="about-me">About Me</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum nemo laborum reiciendis.
-                Perspiciatis neque sint, nostrum facere quasi eos, veniam rem obcaecati delectus quas nisi id maxime
-                ratione aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis explicabo
-                officia maxime quae quibusdam possimus, sit, suscipit numquam architecto sint dignissimos neque, hic
-                tenetur officiis ipsum incidunt sapiente non!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laborum neque eligendi aperiam, tenetur
-                ratione officia, inventore praesentium sint nemo repellat. Sequi voluptate quis pariatur eaque inventore
-                iste hic architecto.
-            </p>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum nemo laborum reiciendis.
+                    Perspiciatis neque sint, nostrum facere quasi eos, veniam rem obcaecati delectus quas nisi id maxime
+                    ratione aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis
+                    explicabo
+                    officia maxime quae quibusdam possimus, sit, suscipit numquam architecto sint dignissimos neque, hic
+                    tenetur officiis ipsum incidunt sapiente non! Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Magni laborum neque eligendi aperiam, tenetur
+                    ratione officia, inventore praesentium sint nemo repellat. Sequi voluptate quis pariatur eaque
+                    inventore
+                    iste hic architecto.
+                </p>
+            </div>
         </section><br>
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <div>
-                <h3 class="knife"><a href="#">Knife Sharpening App</a></h3>
-                <img src="#" alt="Photo of a Japanese Gyuto and some cut veg">
+                <h3 class="drinkapp"><a href="#">"On The Fly" Drink Recipe Helper</a></h3>
+                <img class="cocktail" src="./assets/img/cocktail.jpeg"
+                    alt="Photo of a smartwatch with a cocktail in the background">
             </div>
             <div>
-                <h3 class="drinkapp"><a href="#">"On The Fly" Drink Recipe Helper</a></h3>
-                <img src="#" alt="Photo of a smartwatch with a cocktail in the background">
+                <h3 class="knife"><a href="#">Knife Sharpening App</a></h3>
+                <img src="./assets/img/gyuto.jpg" alt="Photo of a Japanese Gyuto and some cut veg">
             </div>
             <div>
                 <h3 class="calculator"><a href="#">Calculator</a></h3>
-                <img src="#" alt="Photo of a calculator">
+                <img src="./assets/img/calculator.jpg" alt="Photo of a calculator">
             </div>
             <div>
                 <h3 class="grocery"><a href="#">Grocery List App</a></h3>
-                <img src="#" alt="Photo of fresh produce in a grocery bag">
+                <img src="./assets/img/Groceries.jpg" alt="Photo of fresh produce in a grocery bag">
             </div>
         </section><br>
         <section class="contact-me">

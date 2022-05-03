@@ -38,6 +38,10 @@ a:visited {
     height: 60px;
 }
 
+.nav-bar:hover {
+    cursor: default;
+}
+
 .nav-bar li {
     list-style: none;
     display: inline-block;
@@ -46,7 +50,72 @@ a:visited {
 
 .nav-bar li a {
     text-decoration: none;
+    border-right: solid 1px black;
+    padding-right: 3px;
     margin: 10px;
+
+}
+
+.nav-list:hover a {
+    cursor: default;
+    transition: 0.7s;
+    color: cornsilk;
+    background-color: black;
+    border-radius: 10px;
+    border-right: solid 5px cornsilk;
+    padding: 15px;
+
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-me h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-right: solid 1px cornsilk;
+    padding-left: 5px;
+    padding-right: 20px;
+    align-items: center;
+    font-size: x-large;
+}
+
+.about-me p {
+    display: flex;
+    justify-content: end;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects h2 {
+    display: flex;
+    border-right: solid 1px cornsilk;
+    padding-left: 5px;
+    padding-right: 20px;
+    align-items: center;
+    font-size: x-large;
+}
+
+.projects h3 {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    border: solid 3px black;
+    background-color: rgb(77, 77, 77);
+    height: 40px;
+}
+
+.projects img {
+    display: flex;
+    border: solid 3px cornsilk;
 }
 
 .banner img {
