@@ -7,23 +7,29 @@
     color: cornsilk;
 }
 
-/* try adding background image */
-/* page background color that doesn't affect nav*/
 body {
     background-color: rgb(30, 30, 30);
+    margin: .5rem;
 }
 
 a:visited {
     color: black;
 }
 
-/* my name size */
+
 .header {
+    display: flex;
     color: cornsilk;
     font-size: x-large;
+    flex-direction: column;
 }
 
-/* sub-header size */
+.header img {
+    width: 10%;
+    border-radius: 30px;
+    border: solid 3px cornsilk;
+}
+
 .header h2 {
     font-size: larger;
 }
@@ -31,11 +37,12 @@ a:visited {
 .nav-bar {
     display: flex;
     background-color: rgb(77, 77, 77);
-    font-size: larger;
+    font-size: 1rem;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 5%;
     height: 60px;
+    border-bottom: solid 3px black;
 }
 
 .nav-bar:hover {
@@ -44,7 +51,7 @@ a:visited {
 
 .nav-bar li {
     list-style: none;
-    display: inline-block;
+    display: inline-flex;
     text-decoration: none;
 }
 
@@ -67,17 +74,16 @@ a:visited {
 
 }
 
+.about-me-title {
+    font-size: x-large;
+}
+
 .about-me {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
 }
 
 .about-me h2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    border-right: solid 1px cornsilk;
     padding-left: 5px;
     padding-right: 20px;
     align-items: center;
@@ -86,26 +92,19 @@ a:visited {
 
 .about-me p {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: column;
 }
 
-.projects h2 {
-    display: flex;
-    border-right: solid 1px cornsilk;
-    padding-left: 5px;
-    padding-right: 20px;
-    align-items: center;
+.projects-title {
     font-size: x-large;
 }
 
 .projects h3 {
-    display: flex;
+    display: grid;
     align-items: center;
     padding-left: 30px;
     border: solid 3px black;
@@ -113,11 +112,69 @@ a:visited {
     height: 40px;
 }
 
-.projects img {
-    display: flex;
-    border: solid 3px cornsilk;
+.projects div img {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: cornsilk;
+    box-shadow: 0 0 5px rgb(107, 119, 152);
+}
+
+.projects div img:hover {
+    transform: scale(1.02);
 }
 
 .banner img {
     width: 100%;
+}
+
+.contact-me {
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    display: flexbox;
+    background-color: rgb(77, 77, 77);
+    padding-left: 5px;
+    padding-right: 20px;
+    align-items: center;
+    font-size: x-large;
+    display: inline-flex;
+}
+
+.contact-me ul {
+    font-size: large;
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.contact-me li {
+    /* padding: 1rem; */
+
+}
+
+.contact-me li a {
+    justify-content: space-between;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .nav-bar li a {
+        text-align: center;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grip-gap: 30px;
+        column-gap: .5rem;
+        row-gap: 3.5rem;
+    }
 }
