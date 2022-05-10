@@ -128,16 +128,19 @@ a:visited {
     width: 100%;
 }
 
+.contact-header h2 {
+    background-color: rgb(77, 77, 77);
+    border: solid 3px rgb(77, 77, 77);
+}
+
 .contact-me {
+    display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 60px;
-    display: flexbox;
+    height: 50px;
     background-color: rgb(77, 77, 77);
-    padding-left: 5px;
-    padding-right: 20px;
     align-items: center;
-    font-size: x-large;
+    font-size: large;
     display: inline-flex;
 }
 
@@ -176,5 +179,11 @@ a:visited {
         grip-gap: 30px;
         column-gap: .5rem;
         row-gap: 3.5rem;
+    }
+
+    .contact-me {
+        font-size: medium;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
