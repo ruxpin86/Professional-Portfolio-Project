@@ -22,15 +22,23 @@ a:visited {
     color: cornsilk;
     font-size: x-large;
     flex-direction: column;
+    padding-top: 2em;
 }
 
-.header img {
-    width: 10%;
-    border-radius: 30px;
+.tedshot {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5.5em;
+}
+
+#headshot {
     border: solid 3px cornsilk;
+    width: 12em;
+    border-radius: .5em;
 }
 
 .portfolio-title {
+    padding-top: 1em;
     font-size: x-large;
 }
 
@@ -40,7 +48,7 @@ a:visited {
     font-size: 1rem;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 5%;
+    padding: 1.25em 2%;
     height: 60px;
     border-bottom: solid 3px black;
 }
@@ -72,6 +80,10 @@ a:visited {
     border-right: solid 5px cornsilk;
     padding: 15px;
 
+}
+
+.banner {
+    border-bottom: solid 5px cornsilk;
 }
 
 .about-me-title {
